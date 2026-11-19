@@ -1,0 +1,39 @@
+[
+  {
+    "source": "base_model_card",
+    "url": "https://huggingface.co/ibm-granite/granite-4.2-3b/raw/4e9c275e232f10211ec88644d106a1f6a1b60e06/README.md",
+    "sha256_fetched_body": "8f22ddce440f0c15ecb58fc9f8501b882baf5f2b7ab0d13872fe77d88c1ad792",
+    "bytes_fetched": 35640
+  },
+  {
+    "source": "base_model_tree",
+    "url": "https://huggingface.co/api/models/ibm-granite/granite-4.2-3b/tree/4e9c275e232f10211ec88644d106a1f6a1b60e06",
+    "sha256_fetched_body": "91bb63aeaf99a67ae8049e28361ed87144f65c99fc5a03a07170dbfa3e1dd3fb",
+    "bytes_fetched": 1995
+  },
+  {
+    "source": "fineweb_edu_card",
+    "url": "https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu/raw/main/README.md",
+    "sha256_fetched_body": "a0cc8998a20499432b28b6575f3046b714938eb8e11b8d59a1d25ddf3716061e",
+    "bytes_fetched": 26354
+  },
+  {
+    "source": "odc_by",
+    "url": "https://opendatacommons.org/licenses/by/1-0/",
+    "retrieval": "extracted page text",
+    "sha256_extracted_text": "c4917ccd0ab91a4a36bf086ee349070923682c69b367a65a904ff5f85891baae",
+    "bytes_extracted": 22400
+  },
+  {
+    "source": "commoncrawl_terms",
+    "url": "https://commoncrawl.org/terms-of-use",
+    "sha256_fetched_body": "2ffa806b46ea97481beac2d16b556603fb122d6763850a2fbe575a4177191072",
+    "bytes_fetched": 47805
+  },
+  {
+    "source": "custom_artifact_license_canonical_text",
+    "url": "https://www.apache.org/licenses/LICENSE-2.0.txt",
+    "sha256_fetched_body": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "bytes_fetched": 11358
+  }
+]

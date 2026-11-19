@@ -1,0 +1,409 @@
+{
+  "format": "granite-custom-topk-v1",
+  "publication_status": "EXPERIMENTAL_RESEARCH_RELEASE",
+  "license_status": "Apache-2.0",
+  "optimizer_state_included": false,
+  "data_excerpts_included": false,
+  "labels_included": true,
+  "provisional_subset_descriptions_included": true,
+  "full_dictionary_labels_included": false,
+  "labels_included_scope": "Only the provisional 36-feature annotation subset is included; no full-bank labels.",
+  "feature_validation": {
+    "as_of": "2026-11-19",
+    "results": "feature_validation_results.json",
+    "status": "SYNTHETIC_CONTRAST_COMPLETE_HELDOUT_ASSESSMENT_UNFINISHED",
+    "supported_pattern": 24,
+    "inconclusive": 4,
+    "abstained": 8,
+    "independent_heldout_metrics": null,
+    "assessment_judge_calls": 0
+  },
+  "environment": {
+    "python": "3.14.6 | packaged by Anaconda, Inc. | (main, Jul  9 2026, 14:30:20) [Clang 20.1.8 ]",
+    "torch": "2.11.0",
+    "safetensors": "0.8.0",
+    "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O"
+  },
+  "artifacts": [
+    {
+      "layer": 10,
+      "path": "layer10/sae.safetensors",
+      "bytes": 1678081056,
+      "sha256": "d16b0f68e1ca56c9f5636e5eb2ff1cb45999a2deac8e7d5eb796ad376fe68847",
+      "source_checkpoint_sha256": "44ce60feb4a0203d39ef16d667452203f8b41207e4275d12677724346125cbd9",
+      "source_checkpoint_bytes": 5034862412,
+      "source_unchanged_after_export": true,
+      "step": 97700,
+      "config": {
+        "MODEL_NAME": "ibm-granite/granite-4.2-3b",
+        "MODEL_REVISION": "4e9c275e232f10211ec88644d106a1f6a1b60e06",
+        "SEED": 0,
+        "D_MODEL": 2560,
+        "N_LAYERS_TOTAL": 40,
+        "TARGET_LAYERS": [
+          10
+        ],
+        "D_SAE": 81920,
+        "K": 32,
+        "LR": 0.0004,
+        "WARMUP_STEPS": 1000,
+        "RESAMPLE_EVERY_STEPS": 2000,
+        "DEAD_THRESHOLD_STEPS": 2000,
+        "AUX_K": 512,
+        "AUX_LOSS_COEF": 0.03125,
+        "AUX_DEAD_THRESHOLD_STEPS": 500,
+        "DATASET_NAME": "HuggingFaceFW/fineweb-edu",
+        "DATASET_CONFIG": "sample-10BT",
+        "SEQ_LEN": 512,
+        "TOKEN_BUDGET": 200000000,
+        "FORWARD_BATCH_SEQS": 16,
+        "SHUFFLE_BUFFER_TOKENS": 500000,
+        "BUFFER_REFILL_FRACTION": 0.5,
+        "EXCLUDE_LOCAL_POSITION_0": true,
+        "TRAIN_BATCH_SIZE": 2048,
+        "TOTAL_SAE_STEPS": 97656,
+        "BASE_MODEL_DTYPE": "bfloat16",
+        "SAE_DTYPE": "float32"
+      },
+      "metadata": {
+        "format": "granite-custom-topk-v1",
+        "layer": "10",
+        "model": "ibm-granite/granite-4.2-3b",
+        "model_revision": "4e9c275e232f10211ec88644d106a1f6a1b60e06",
+        "hook": "model.model.layers[10] output",
+        "source_checkpoint_sha256": "44ce60feb4a0203d39ef16d667452203f8b41207e4275d12677724346125cbd9",
+        "step": "97700",
+        "normalization": "(h-mean)/std; center on b_dec; inverse recon*std+mean",
+        "encoder": "TopK(preactivation) then ReLU; no decoder renorm",
+        "license": "Apache-2.0",
+        "exclude_local_position_0": "true"
+      },
+      "tensors": {
+        "W_enc": {
+          "shape": [
+            2560,
+            81920
+          ],
+          "dtype": "torch.float32"
+        },
+        "b_enc": {
+          "shape": [
+            81920
+          ],
+          "dtype": "torch.float32"
+        },
+        "W_dec": {
+          "shape": [
+            81920,
+            2560
+          ],
+          "dtype": "torch.float32"
+        },
+        "b_dec": {
+          "shape": [
+            2560
+          ],
+          "dtype": "torch.float32"
+        },
+        "mean": {
+          "shape": [
+            1,
+            2560
+          ],
+          "dtype": "torch.float32"
+        },
+        "std": {
+          "shape": [
+            1,
+            2560
+          ],
+          "dtype": "torch.float32"
+        },
+        "k": {
+          "shape": [],
+          "dtype": "torch.int64"
+        }
+      },
+      "validation": {
+        "kind": "synthetic unit validation, not semantic result",
+        "seed": 20261126,
+        "input_shape": [
+          4,
+          2560
+        ],
+        "all_exported_tensors_bitwise_equal": true,
+        "feature_activations_exact": true,
+        "reconstruction_exact": true,
+        "activation_max_abs_error": 0.0,
+        "original_unit_reconstruction_max_abs_error": 0.0
+      },
+      "license": "Apache-2.0",
+      "embedded_metadata_provenance": {
+        "license": "LICENSE_CHOICE_PENDING",
+        "status": "export-time license-selection provenance, not current license",
+        "superseded_by": "LICENSE"
+      }
+    },
+    {
+      "layer": 20,
+      "path": "layer20/sae.safetensors",
+      "bytes": 1678081056,
+      "sha256": "24b2a40991ff2ce3c4230357fc30edf8d269210e37926b7ef3c2ec6f5b7eebc8",
+      "source_checkpoint_sha256": "461248e1501ac20c0ed1ed2c713ff88f94066326d9a5e7044fb5c6772bca259e",
+      "source_checkpoint_bytes": 5034862412,
+      "source_unchanged_after_export": true,
+      "step": 97700,
+      "config": {
+        "MODEL_NAME": "ibm-granite/granite-4.2-3b",
+        "MODEL_REVISION": "4e9c275e232f10211ec88644d106a1f6a1b60e06",
+        "SEED": 0,
+        "D_MODEL": 2560,
+        "N_LAYERS_TOTAL": 40,
+        "TARGET_LAYERS": [
+          20
+        ],
+        "D_SAE": 81920,
+        "K": 32,
+        "LR": 0.0004,
+        "WARMUP_STEPS": 1000,
+        "RESAMPLE_EVERY_STEPS": 2000,
+        "DEAD_THRESHOLD_STEPS": 2000,
+        "AUX_K": 512,
+        "AUX_LOSS_COEF": 0.03125,
+        "AUX_DEAD_THRESHOLD_STEPS": 500,
+        "DATASET_NAME": "HuggingFaceFW/fineweb-edu",
+        "DATASET_CONFIG": "sample-10BT",
+        "SEQ_LEN": 512,
+        "TOKEN_BUDGET": 200000000,
+        "FORWARD_BATCH_SEQS": 16,
+        "SHUFFLE_BUFFER_TOKENS": 500000,
+        "BUFFER_REFILL_FRACTION": 0.5,
+        "EXCLUDE_LOCAL_POSITION_0": true,
+        "TRAIN_BATCH_SIZE": 2048,
+        "TOTAL_SAE_STEPS": 97656,
+        "BASE_MODEL_DTYPE": "bfloat16",
+        "SAE_DTYPE": "float32"
+      },
+      "metadata": {
+        "format": "granite-custom-topk-v1",
+        "layer": "20",
+        "model": "ibm-granite/granite-4.2-3b",
+        "model_revision": "4e9c275e232f10211ec88644d106a1f6a1b60e06",
+        "hook": "model.model.layers[20] output",
+        "source_checkpoint_sha256": "461248e1501ac20c0ed1ed2c713ff88f94066326d9a5e7044fb5c6772bca259e",
+        "step": "97700",
+        "normalization": "(h-mean)/std; center on b_dec; inverse recon*std+mean",
+        "encoder": "TopK(preactivation) then ReLU; no decoder renorm",
+        "license": "Apache-2.0",
+        "exclude_local_position_0": "true"
+      },
+      "tensors": {
+        "W_enc": {
+          "shape": [
+            2560,
+            81920
+          ],
+          "dtype": "torch.float32"
+        },
+        "b_enc": {
+          "shape": [
+            81920
+          ],
+          "dtype": "torch.float32"
+        },
+        "W_dec": {
+          "shape": [
+            81920,
+            2560
+          ],
+          "dtype": "torch.float32"
+        },
+        "b_dec": {
+          "shape": [
+            2560
+          ],
+          "dtype": "torch.float32"
+        },
+        "mean": {
+          "shape": [
+            1,
+            2560
+          ],
+          "dtype": "torch.float32"
+        },
+        "std": {
+          "shape": [
+            1,
+            2560
+          ],
+          "dtype": "torch.float32"
+        },
+        "k": {
+          "shape": [],
+          "dtype": "torch.int64"
+        }
+      },
+      "validation": {
+        "kind": "synthetic unit validation, not semantic result",
+        "seed": 20261136,
+        "input_shape": [
+          4,
+          2560
+        ],
+        "all_exported_tensors_bitwise_equal": true,
+        "feature_activations_exact": true,
+        "reconstruction_exact": true,
+        "activation_max_abs_error": 0.0,
+        "original_unit_reconstruction_max_abs_error": 0.0
+      },
+      "license": "Apache-2.0",
+      "embedded_metadata_provenance": {
+        "license": "LICENSE_CHOICE_PENDING",
+        "status": "export-time license-selection provenance, not current license",
+        "superseded_by": "LICENSE"
+      }
+    },
+    {
+      "layer": 30,
+      "path": "layer30/sae.safetensors",
+      "bytes": 1678081056,
+      "sha256": "5eb703ab440415a3151408e0b3c8261a52827a5858a6edcfb01316b5f89d710c",
+      "source_checkpoint_sha256": "03b088725a6dd069fbd9af9c5294d58663fac9f58496382f0e4a34a91854d4fc",
+      "source_checkpoint_bytes": 5034862412,
+      "source_unchanged_after_export": true,
+      "step": 97700,
+      "config": {
+        "MODEL_NAME": "ibm-granite/granite-4.2-3b",
+        "MODEL_REVISION": "4e9c275e232f10211ec88644d106a1f6a1b60e06",
+        "SEED": 0,
+        "D_MODEL": 2560,
+        "N_LAYERS_TOTAL": 40,
+        "TARGET_LAYERS": [
+          30
+        ],
+        "D_SAE": 81920,
+        "K": 32,
+        "LR": 0.0004,
+        "WARMUP_STEPS": 1000,
+        "RESAMPLE_EVERY_STEPS": 2000,
+        "DEAD_THRESHOLD_STEPS": 2000,
+        "AUX_K": 512,
+        "AUX_LOSS_COEF": 0.03125,
+        "AUX_DEAD_THRESHOLD_STEPS": 500,
+        "DATASET_NAME": "HuggingFaceFW/fineweb-edu",
+        "DATASET_CONFIG": "sample-10BT",
+        "SEQ_LEN": 512,
+        "TOKEN_BUDGET": 200000000,
+        "FORWARD_BATCH_SEQS": 16,
+        "SHUFFLE_BUFFER_TOKENS": 500000,
+        "BUFFER_REFILL_FRACTION": 0.5,
+        "EXCLUDE_LOCAL_POSITION_0": true,
+        "TRAIN_BATCH_SIZE": 2048,
+        "TOTAL_SAE_STEPS": 97656,
+        "BASE_MODEL_DTYPE": "bfloat16",
+        "SAE_DTYPE": "float32"
+      },
+      "metadata": {
+        "format": "granite-custom-topk-v1",
+        "layer": "30",
+        "model": "ibm-granite/granite-4.2-3b",
+        "model_revision": "4e9c275e232f10211ec88644d106a1f6a1b60e06",
+        "hook": "model.model.layers[30] output",
+        "source_checkpoint_sha256": "03b088725a6dd069fbd9af9c5294d58663fac9f58496382f0e4a34a91854d4fc",
+        "step": "97700",
+        "normalization": "(h-mean)/std; center on b_dec; inverse recon*std+mean",
+        "encoder": "TopK(preactivation) then ReLU; no decoder renorm",
+        "license": "Apache-2.0",
+        "exclude_local_position_0": "true"
+      },
+      "tensors": {
+        "W_enc": {
+          "shape": [
+            2560,
+            81920
+          ],
+          "dtype": "torch.float32"
+        },
+        "b_enc": {
+          "shape": [
+            81920
+          ],
+          "dtype": "torch.float32"
+        },
+        "W_dec": {
+          "shape": [
+            81920,
+            2560
+          ],
+          "dtype": "torch.float32"
+        },
+        "b_dec": {
+          "shape": [
+            2560
+          ],
+          "dtype": "torch.float32"
+        },
+        "mean": {
+          "shape": [
+            1,
+            2560
+          ],
+          "dtype": "torch.float32"
+        },
+        "std": {
+          "shape": [
+            1,
+            2560
+          ],
+          "dtype": "torch.float32"
+        },
+        "k": {
+          "shape": [],
+          "dtype": "torch.int64"
+        }
+      },
+      "validation": {
+        "kind": "synthetic unit validation, not semantic result",
+        "seed": 20261146,
+        "input_shape": [
+          4,
+          2560
+        ],
+        "all_exported_tensors_bitwise_equal": true,
+        "feature_activations_exact": true,
+        "reconstruction_exact": true,
+        "activation_max_abs_error": 0.0,
+        "original_unit_reconstruction_max_abs_error": 0.0
+      },
+      "license": "Apache-2.0",
+      "embedded_metadata_provenance": {
+        "license": "LICENSE_CHOICE_PENDING",
+        "status": "export-time license-selection provenance, not current license",
+        "superseded_by": "LICENSE"
+      }
+    }
+  ],
+  "license": "Apache-2.0",
+  "licensing": {
+    "spdx_identifier": "Apache-2.0",
+    "copyright": "Copyright 2026 Alex M. Müller",
+    "license_file": "LICENSE",
+    "notice_file": "NOTICE",
+    "rights_file": "RIGHTS.md",
+    "scope": [
+      "custom SAE weights",
+      "owner-owned training code",
+      "reference loader",
+      "documentation",
+      "provisional annotations",
+      "numeric results"
+    ],
+    "excludes": [
+      "upstream base-model weights",
+      "rights-uncleared corpus content"
+    ],
+    "canonical_license_url": "https://www.apache.org/licenses/LICENSE-2.0.txt",
+    "canonical_license_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "embedded_header_policy": "Legacy license-selection metadata records export-time provenance; LICENSE supersedes that field. Weight bytes are unchanged."
+  }
+}

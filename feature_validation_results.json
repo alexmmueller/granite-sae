@@ -1,0 +1,1729 @@
+{
+  "schema": "granite-feature-contrast-summary-v1",
+  "as_of": "2026-11-19",
+  "status": "SYNTHETIC_CONTRAST_COMPLETE_HELDOUT_ASSESSMENT_UNFINISHED",
+  "source_summary_sha256": "8c10f7b76a4b58148c939bbf19795654ea75dc886e64a5317899700e4612ac58",
+  "frozen_protocol_sha256": "925df19df5a2a478f177b7ada9fb4664c0449b3a112918ccb40461a242425c62",
+  "model": "ibm-granite/granite-4.2-3b",
+  "model_revision": "4e9c275e232f10211ec88644d106a1f6a1b60e06",
+  "sampling": "Deterministic stratified diagnostic subset; six coherent, four mixed, two insufficient per layer; not population accuracy.",
+  "reviewer": "Same assistant authored descriptions and synthetic tests; unblinded; no human or independent expert review.",
+  "natural_replay": {
+    "records": 300,
+    "sequences": 298,
+    "max_abs_error": 0.0,
+    "failures": []
+  },
+  "synthetic_sequences": 224,
+  "synthetic_pairs": 112,
+  "counts": {
+    "supported-pattern": 24,
+    "inconclusive": 4,
+    "ABSTAIN": 8
+  },
+  "scoring": "Per pair positive target maximum >= .25*q25 and positive-negative >= .10*q25; supported-pattern if >=3/4 pairs satisfy; refuted-contrast prediction if <=1/4 and >=2 negatives are at least .25*q25 while exceeding positives by .10*q25; otherwise inconclusive. ABSTAIN remains abstention regardless incidental responses. Quantiles are top-example peaks, not natural firing quantiles. All coefficients frozen before inference. Report raw target arrays and sequence maxima, ties and failures. This is neither semantic accuracy nor causal necessity/sufficiency.",
+  "independent_assessment": {
+    "status": "UNFINISHED",
+    "judge_calls": 0,
+    "heldout_metrics": null
+  },
+  "exclusions": "No corpus excerpts, source documents, token windows or synthetic test texts included. Provisional descriptions and numeric aggregates only.",
+  "features": [
+    {
+      "layer": 10,
+      "feature": 32107,
+      "description": "Awaken/awakening lexical family",
+      "stratum": "coherent-supported pattern",
+      "q25_top_example_peak": 34.65907001495361,
+      "pairs": [
+        {
+          "pair_id": "10-32107-0",
+          "positive": 38.0994987487793,
+          "negative": 0.0,
+          "difference": 38.0994987487793,
+          "pass": true,
+          "token_lengths": [
+            10,
+            10
+          ],
+          "token_length_difference": 0
+        },
+        {
+          "pair_id": "10-32107-1",
+          "positive": 25.36326026916504,
+          "negative": 0.0,
+          "difference": 25.36326026916504,
+          "pass": true,
+          "token_lengths": [
+            9,
+            9
+          ],
+          "token_length_difference": 0
+        },
+        {
+          "pair_id": "10-32107-2",
+          "positive": 37.87108612060547,
+          "negative": 0.0,
+          "difference": 37.87108612060547,
+          "pass": true,
+          "token_lengths": [
+            9,
+            8
+          ],
+          "token_length_difference": 1
+        },
+        {
+          "pair_id": "10-32107-3",
+          "positive": 29.476720809936523,
+          "negative": 0.0,
+          "difference": 29.476720809936523,
+          "pass": true,
+          "token_lengths": [
+            7,
+            7
+          ],
+          "token_length_difference": 0
+        }
+      ],
+      "disposition": "supported-pattern"
+    },
+    {
+      "layer": 10,
+      "feature": 79197,
+      "description": "Punctuation following abbreviations and units",
+      "stratum": "coherent-supported pattern",
+      "q25_top_example_peak": 14.640489101409912,
+      "pairs": [
+        {
+          "pair_id": "10-79197-0",
+          "positive": 16.965991973876953,
+          "negative": 7.114408016204834,
+          "difference": 9.85158395767212,
+          "pass": true,
+          "token_lengths": [
+            12,
+            10
+          ],
+          "token_length_difference": 2
+        },
+        {
+          "pair_id": "10-79197-1",
+          "positive": 18.11898422241211,
+          "negative": 17.185304641723633,
+          "difference": 0.9336795806884766,
+          "pass": false,
+          "token_lengths": [
+            12,
+            12
+          ],
+          "token_length_difference": 0
+        },
+        {
+          "pair_id": "10-79197-2",
+          "positive": 15.911304473876953,
+          "negative": 9.426806449890137,
+          "difference": 6.484498023986816,
+          "pass": true,
+          "token_lengths": [
+            11,
+            9
+          ],
+          "token_length_difference": 2
+        },
+        {
+          "pair_id": "10-79197-3",
+          "positive": 10.46872615814209,
+          "negative": 0.0,
+          "difference": 10.46872615814209,
+          "pass": true,
+          "token_lengths": [
+            14,
+            14
+          ],
+          "token_length_difference": 0
+        }
+      ],
+      "disposition": "supported-pattern"
+    },
+    {
+      "layer": 10,
+      "feature": 73396,
+      "description": "Granted in take for granted",
+      "stratum": "coherent-supported pattern",
+      "q25_top_example_peak": 42.219154357910156,
+      "pairs": [
+        {
+          "pair_id": "10-73396-0",
+          "positive": 32.42057418823242,
+          "negative": 0.0,
+          "difference": 32.42057418823242,
+          "pass": true,
+          "token_lengths": [
+            9,
+            9
+          ],
+          "token_length_difference": 0
+        },
+        {
+          "pair_id": "10-73396-1",
+          "positive": 31.84347152709961,
+          "negative": 0.0,
+          "difference": 31.84347152709961,
+          "pass": true,
+          "token_lengths": [
+            9,
+            9
+          ],
+          "token_length_difference": 0
+        },
+        {
+          "pair_id": "10-73396-2",
+          "positive": 36.1317024230957,
+          "negative": 0.0,
+          "difference": 36.1317024230957,
+          "pass": true,
+          "token_lengths": [
+            9,
+            9
+          ],
+          "token_length_difference": 0
+        },
+        {
+          "pair_id": "10-73396-3",
+          "positive": 42.78291702270508,
+          "negative": 0.0,
+          "difference": 42.78291702270508,
+          "pass": true,
+          "token_lengths": [
+            9,
+            7
+          ],
+          "token_length_difference": 2
+        }
+      ],
+      "disposition": "supported-pattern"
+    },
+    {
+      "layer": 10,
+      "feature": 15312,
+      "description": "ocrine in endocrine",
+      "stratum": "coherent-supported pattern",
+      "q25_top_example_peak": 16.866086959838867,
+      "pairs": [
+        {
+          "pair_id": "10-15312-0",
+          "positive": 15.266033172607422,
+          "negative": 0.0,
+          "difference": 15.266033172607422,
+          "pass": true,
+          "token_lengths": [
+            9,
+            8
+          ],
+          "token_length_difference": 1
+        },
+        {
+          "pair_id": "10-15312-1",
+          "positive": 16.984621047973633,
+          "negative": 0.0,
+          "difference": 16.984621047973633,
+          "pass": true,
+          "token_lengths": [
+            11,
+            10
+          ],
+          "token_length_difference": 1
+        },
+        {
+          "pair_id": "10-15312-2",
+          "positive": 14.920428276062012,
+          "negative": 0.0,
+          "difference": 14.920428276062012,
+          "pass": true,
+          "token_lengths": [
+            9,
+            9
+          ],
+          "token_length_difference": 0
+        },
+        {
+          "pair_id": "10-15312-3",
+          "positive": 13.667953491210938,
+          "negative": 0.0,
+          "difference": 13.667953491210938,
+          "pass": true,
+          "token_lengths": [
+            8,
+            8
+          ],
+          "token_length_difference": 0
+        }
+      ],
+      "disposition": "supported-pattern"
+    },
+    {
+      "layer": 10,
+      "feature": 8552,
+      "description": "Cedar/Cedars name or tree term",
+      "stratum": "coherent-supported pattern",
+      "q25_top_example_peak": 42.558250427246094,
+      "pairs": [
+        {
+          "pair_id": "10-8552-0",
+          "positive": 40.79032897949219,
+          "negative": 0.0,
+          "difference": 40.79032897949219,
+          "pass": true,
+          "token_lengths": [
+            9,
+            9
+          ],
+          "token_length_difference": 0
+        },
+        {
+          "pair_id": "10-8552-1",
+          "positive": 47.133907318115234,
+          "negative": 0.0,
+          "difference": 47.133907318115234,
+          "pass": true,
+          "token_lengths": [
+            11,
+            10
+          ],
+          "token_length_difference": 1
+        },
+        {
+          "pair_id": "10-8552-2",
+          "positive": 42.13709259033203,
+          "negative": 0.0,
+          "difference": 42.13709259033203,
+          "pass": true,
+          "token_lengths": [
+            8,
+            8
+          ],
+          "token_length_difference": 0
+        },
+        {
+          "pair_id": "10-8552-3",
+          "positive": 35.86783218383789,
+          "negative": 0.0,
+          "difference": 35.86783218383789,
+          "pass": true,
+          "token_lengths": [
+            8,
+            9
+          ],
+          "token_length_difference": -1
+        }
+      ],
+      "disposition": "supported-pattern"
+    },
+    {
+      "layer": 10,
+      "feature": 30100,
+      "description": "Token following Dean/dean",
+      "stratum": "coherent-supported pattern",
+      "q25_top_example_peak": 25.961886405944824,
+      "pairs": [
+        {
+          "pair_id": "10-30100-0",
+          "positive": 28.134366989135742,
+          "negative": 0.0,
+          "difference": 28.134366989135742,
+          "pass": true,
+          "token_lengths": [
+            8,
+            8
+          ],
+          "token_length_difference": 0
+        },
+        {
+          "pair_id": "10-30100-1",
+          "positive": 39.88094711303711,
+          "negative": 0.0,
+          "difference": 39.88094711303711,
+          "pass": true,
+          "token_lengths": [
+            9,
+            9
+          ],
+          "token_length_difference": 0
+        },
+        {
+          "pair_id": "10-30100-2",
+          "positive": 17.824974060058594,
+          "negative": 0.0,
+          "difference": 17.824974060058594,
+          "pass": true,
+          "token_lengths": [
+            8,
+            8
+          ],
+          "token_length_difference": 0
+        },
+        {
+          "pair_id": "10-30100-3",
+          "positive": 0.0,
+          "negative": 0.0,
+          "difference": 0.0,
+          "pass": false,
+          "token_lengths": [
+            8,
+            8
+          ],
+          "token_length_difference": 0
+        }
+      ],
+      "disposition": "supported-pattern"
+    },
+    {
+      "layer": 10,
+      "feature": 69610,
+      "description": "On/onto one’s back/side and turned on its head",
+      "stratum": "mixed-or-underspecified",
+      "q25_top_example_peak": 24.67349672317505,
+      "pairs": [
+        {
+          "pair_id": "10-69610-0",
+          "positive": 31.77384376525879,
+          "negative": 0.0,
+          "difference": 31.77384376525879,
+          "pass": true,
+          "token_lengths": [
+            9,
+            9
+          ],
+          "token_length_difference": 0
+        },
+        {
+          "pair_id": "10-69610-1",
+          "positive": 33.469757080078125,
+          "negative": 0.0,
+          "difference": 33.469757080078125,
+          "pass": true,
+          "token_lengths": [
+            8,
+            8
+          ],
+          "token_length_difference": 0
+        },
+        {
+          "pair_id": "10-69610-2",
+          "positive": 22.728944778442383,
+          "negative": 0.0,
+          "difference": 22.728944778442383,
+          "pass": true,
+          "token_lengths": [
+            10,
+            9
+          ],
+          "token_length_difference": 1
+        },
+        {
+          "pair_id": "10-69610-3",
+          "positive": 19.873979568481445,
+          "negative": 4.438146114349365,
+          "difference": 15.43583345413208,
+          "pass": true,
+          "token_lengths": [
+            9,
+            9
+          ],
+          "token_length_difference": 0
+        }
+      ],
+      "disposition": "supported-pattern"
+    },
+    {
+      "layer": 10,
+      "feature": 77130,
+      "description": "Continuation after trem/drem, with unrelated tails",
+      "stratum": "mixed-or-underspecified",
+      "q25_top_example_peak": 18.04824209213257,
+      "pairs": [
+        {
+          "pair_id": "10-77130-0",
+          "positive": 42.67623519897461,
+          "negative": 0.0,
+          "difference": 42.67623519897461,
+          "pass": true,
+          "token_lengths": [
+            11,
+            10
+          ],
+          "token_length_difference": 1
+        },
+        {
+          "pair_id": "10-77130-1",
+          "positive": 46.9024543762207,
+          "negative": 0.0,
+          "difference": 46.9024543762207,
+          "pass": true,
+          "token_lengths": [
+            12,
+            11
+          ],
+          "token_length_difference": 1
+        },
+        {
+          "pair_id": "10-77130-2",
+          "positive": 48.62136459350586,
+          "negative": 0.0,
+          "difference": 48.62136459350586,
+          "pass": true,
+          "token_lengths": [
+            10,
+            8
+          ],
+          "token_length_difference": 2
+        },
+        {
+          "pair_id": "10-77130-3",
+          "positive": 31.332763671875,
+          "negative": 0.0,
+          "difference": 31.332763671875,
+          "pass": true,
+          "token_lengths": [
+            8,
+            8
+          ],
+          "token_length_difference": 0
+        }
+      ],
+      "disposition": "supported-pattern"
+    },
+    {
+      "layer": 10,
+      "feature": 22848,
+      "description": "Molybdenum/niobium metal-name endings",
+      "stratum": "mixed-or-underspecified",
+      "q25_top_example_peak": 23.780404567718506,
+      "pairs": [
+        {
+          "pair_id": "10-22848-0",
+          "positive": 44.64823913574219,
+          "negative": 0.0,
+          "difference": 44.64823913574219,
+          "pass": true,
+          "token_lengths": [
+            11,
+            7
+          ],
+          "token_length_difference": 4
+        },
+        {
+          "pair_id": "10-22848-1",
+          "positive": 17.412670135498047,
+          "negative": 0.0,
+          "difference": 17.412670135498047,
+          "pass": true,
+          "token_lengths": [
+            9,
+            7
+          ],
+          "token_length_difference": 2
+        },
+        {
+          "pair_id": "10-22848-2",
+          "positive": 43.021942138671875,
+          "negative": 0.0,
+          "difference": 43.021942138671875,
+          "pass": true,
+          "token_lengths": [
+            11,
+            7
+          ],
+          "token_length_difference": 4
+        },
+        {
+          "pair_id": "10-22848-3",
+          "positive": 15.378435134887695,
+          "negative": 0.0,
+          "difference": 15.378435134887695,
+          "pass": true,
+          "token_lengths": [
+            12,
+            10
+          ],
+          "token_length_difference": 2
+        }
+      ],
+      "disposition": "supported-pattern"
+    },
+    {
+      "layer": 10,
+      "feature": 44314,
+      "description": "Mostly corrupted/replacement characters with a diacritic exception",
+      "stratum": "mixed-or-underspecified",
+      "q25_top_example_peak": 6.946089148521423,
+      "pairs": [
+        {
+          "pair_id": "10-44314-0",
+          "positive": 0.0,
+          "negative": 0.0,
+          "difference": 0.0,
+          "pass": false,
+          "token_lengths": [
+            8,
+            9
+          ],
+          "token_length_difference": -1
+        },
+        {
+          "pair_id": "10-44314-1",
+          "positive": 0.0,
+          "negative": 0.0,
+          "difference": 0.0,
+          "pass": false,
+          "token_lengths": [
+            10,
+            12
+          ],
+          "token_length_difference": -2
+        },
+        {
+          "pair_id": "10-44314-2",
+          "positive": 0.0,
+          "negative": 0.0,
+          "difference": 0.0,
+          "pass": false,
+          "token_lengths": [
+            9,
+            8
+          ],
+          "token_length_difference": 1
+        },
+        {
+          "pair_id": "10-44314-3",
+          "positive": 0.0,
+          "negative": 0.0,
+          "difference": 0.0,
+          "pass": false,
+          "token_lengths": [
+            9,
+            9
+          ],
+          "token_length_difference": 0
+        }
+      ],
+      "disposition": "inconclusive"
+    },
+    {
+      "layer": 10,
+      "feature": 70216,
+      "description": "ABSTAIN",
+      "stratum": "insufficient-observations",
+      "q25_top_example_peak": null,
+      "pairs": [],
+      "disposition": "ABSTAIN"
+    },
+    {
+      "layer": 10,
+      "feature": 58057,
+      "description": "ABSTAIN",
+      "stratum": "insufficient-observations",
+      "q25_top_example_peak": null,
+      "pairs": [],
+      "disposition": "ABSTAIN"
+    },
+    {
+      "layer": 20,
+      "feature": 63133,
+      "description": "Off following cut/cutting/cutteth",
+      "stratum": "coherent-supported pattern",
+      "q25_top_example_peak": 20.640172004699707,
+      "pairs": [
+        {
+          "pair_id": "20-63133-0",
+          "positive": 16.413095474243164,
+          "negative": 0.0,
+          "difference": 16.413095474243164,
+          "pass": true,
+          "token_lengths": [
+            9,
+            9
+          ],
+          "token_length_difference": 0
+        },
+        {
+          "pair_id": "20-63133-1",
+          "positive": 16.59810447692871,
+          "negative": 0.0,
+          "difference": 16.59810447692871,
+          "pass": true,
+          "token_lengths": [
+            9,
+            9
+          ],
+          "token_length_difference": 0
+        },
+        {
+          "pair_id": "20-63133-2",
+          "positive": 18.332225799560547,
+          "negative": 0.0,
+          "difference": 18.332225799560547,
+          "pass": true,
+          "token_lengths": [
+            10,
+            10
+          ],
+          "token_length_difference": 0
+        },
+        {
+          "pair_id": "20-63133-3",
+          "positive": 11.532526969909668,
+          "negative": 0.0,
+          "difference": 11.532526969909668,
+          "pass": true,
+          "token_lengths": [
+            9,
+            9
+          ],
+          "token_length_difference": 0
+        }
+      ],
+      "disposition": "supported-pattern"
+    },
+    {
+      "layer": 20,
+      "feature": 61793,
+      "description": "Bit/bits in digital representation and computing",
+      "stratum": "coherent-supported pattern",
+      "q25_top_example_peak": 16.440543174743652,
+      "pairs": [
+        {
+          "pair_id": "20-61793-0",
+          "positive": 18.383255004882812,
+          "negative": 11.931655883789062,
+          "difference": 6.45159912109375,
+          "pass": true,
+          "token_lengths": [
+            10,
+            10
+          ],
+          "token_length_difference": 0
+        },
+        {
+          "pair_id": "20-61793-1",
+          "positive": 8.281197547912598,
+          "negative": 9.976004600524902,
+          "difference": -1.6948070526123047,
+          "pass": false,
+          "token_lengths": [
+            9,
+            9
+          ],
+          "token_length_difference": 0
+        },
+        {
+          "pair_id": "20-61793-2",
+          "positive": 15.812663078308105,
+          "negative": 0.0,
+          "difference": 15.812663078308105,
+          "pass": true,
+          "token_lengths": [
+            11,
+            11
+          ],
+          "token_length_difference": 0
+        },
+        {
+          "pair_id": "20-61793-3",
+          "positive": 14.926397323608398,
+          "negative": 0.0,
+          "difference": 14.926397323608398,
+          "pass": true,
+          "token_lengths": [
+            8,
+            7
+          ],
+          "token_length_difference": 1
+        }
+      ],
+      "disposition": "supported-pattern"
+    },
+    {
+      "layer": 20,
+      "feature": 66454,
+      "description": "Justify/justified/justification lexical family",
+      "stratum": "coherent-supported pattern",
+      "q25_top_example_peak": 23.3453631401062,
+      "pairs": [
+        {
+          "pair_id": "20-66454-0",
+          "positive": 15.819900512695312,
+          "negative": 0.0,
+          "difference": 15.819900512695312,
+          "pass": true,
+          "token_lengths": [
+            9,
+            9
+          ],
+          "token_length_difference": 0
+        },
+        {
+          "pair_id": "20-66454-1",
+          "positive": 22.340269088745117,
+          "negative": 0.0,
+          "difference": 22.340269088745117,
+          "pass": true,
+          "token_lengths": [
+            9,
+            9
+          ],
+          "token_length_difference": 0
+        },
+        {
+          "pair_id": "20-66454-2",
+          "positive": 13.667736053466797,
+          "negative": 0.0,
+          "difference": 13.667736053466797,
+          "pass": true,
+          "token_lengths": [
+            10,
+            10
+          ],
+          "token_length_difference": 0
+        },
+        {
+          "pair_id": "20-66454-3",
+          "positive": 13.696367263793945,
+          "negative": 0.0,
+          "difference": 13.696367263793945,
+          "pass": true,
+          "token_lengths": [
+            8,
+            7
+          ],
+          "token_length_difference": 1
+        }
+      ],
+      "disposition": "supported-pattern"
+    },
+    {
+      "layer": 20,
+      "feature": 69459,
+      "description": "Daytime/day in contrast to nighttime activity/sleep",
+      "stratum": "coherent-supported pattern",
+      "q25_top_example_peak": 26.490100860595703,
+      "pairs": [
+        {
+          "pair_id": "20-69459-0",
+          "positive": 25.872934341430664,
+          "negative": 0.0,
+          "difference": 25.872934341430664,
+          "pass": true,
+          "token_lengths": [
+            11,
+            11
+          ],
+          "token_length_difference": 0
+        },
+        {
+          "pair_id": "20-69459-1",
+          "positive": 25.012556076049805,
+          "negative": 0.0,
+          "difference": 25.012556076049805,
+          "pass": true,
+          "token_lengths": [
+            13,
+            13
+          ],
+          "token_length_difference": 0
+        },
+        {
+          "pair_id": "20-69459-2",
+          "positive": 23.10783576965332,
+          "negative": 0.0,
+          "difference": 23.10783576965332,
+          "pass": true,
+          "token_lengths": [
+            9,
+            9
+          ],
+          "token_length_difference": 0
+        },
+        {
+          "pair_id": "20-69459-3",
+          "positive": 16.422931671142578,
+          "negative": 9.508896827697754,
+          "difference": 6.914034843444824,
+          "pass": true,
+          "token_lengths": [
+            9,
+            9
+          ],
+          "token_length_difference": 0
+        }
+      ],
+      "disposition": "supported-pattern"
+    },
+    {
+      "layer": 20,
+      "feature": 46339,
+      "description": "Independent/dependent experimental or statistical variables",
+      "stratum": "coherent-supported pattern",
+      "q25_top_example_peak": 20.106953620910645,
+      "pairs": [
+        {
+          "pair_id": "20-46339-0",
+          "positive": 22.16289710998535,
+          "negative": 0.0,
+          "difference": 22.16289710998535,
+          "pass": true,
+          "token_lengths": [
+            12,
+            12
+          ],
+          "token_length_difference": 0
+        },
+        {
+          "pair_id": "20-46339-1",
+          "positive": 18.890445709228516,
+          "negative": 0.0,
+          "difference": 18.890445709228516,
+          "pass": true,
+          "token_lengths": [
+            10,
+            11
+          ],
+          "token_length_difference": -1
+        },
+        {
+          "pair_id": "20-46339-2",
+          "positive": 0.0,
+          "negative": 0.0,
+          "difference": 0.0,
+          "pass": false,
+          "token_lengths": [
+            8,
+            8
+          ],
+          "token_length_difference": 0
+        },
+        {
+          "pair_id": "20-46339-3",
+          "positive": 14.827006340026855,
+          "negative": 0.0,
+          "difference": 14.827006340026855,
+          "pass": true,
+          "token_lengths": [
+            8,
+            9
+          ],
+          "token_length_difference": -1
+        }
+      ],
+      "disposition": "supported-pattern"
+    },
+    {
+      "layer": 20,
+      "feature": 48427,
+      "description": "Unwanted/unused/obsolete items in disposal or rehoming",
+      "stratum": "coherent-supported pattern",
+      "q25_top_example_peak": 5.483267784118652,
+      "pairs": [
+        {
+          "pair_id": "20-48427-0",
+          "positive": 5.968987941741943,
+          "negative": 0.0,
+          "difference": 5.968987941741943,
+          "pass": true,
+          "token_lengths": [
+            9,
+            9
+          ],
+          "token_length_difference": 0
+        },
+        {
+          "pair_id": "20-48427-1",
+          "positive": 0.0,
+          "negative": 0.0,
+          "difference": 0.0,
+          "pass": false,
+          "token_lengths": [
+            13,
+            11
+          ],
+          "token_length_difference": 2
+        },
+        {
+          "pair_id": "20-48427-2",
+          "positive": 0.0,
+          "negative": 0.0,
+          "difference": 0.0,
+          "pass": false,
+          "token_lengths": [
+            10,
+            10
+          ],
+          "token_length_difference": 0
+        },
+        {
+          "pair_id": "20-48427-3",
+          "positive": 5.5826287269592285,
+          "negative": 0.0,
+          "difference": 5.5826287269592285,
+          "pass": true,
+          "token_lengths": [
+            10,
+            11
+          ],
+          "token_length_difference": -1
+        }
+      ],
+      "disposition": "inconclusive"
+    },
+    {
+      "layer": 20,
+      "feature": 32313,
+      "description": "ABSTAIN",
+      "stratum": "mixed-or-underspecified",
+      "q25_top_example_peak": 14.669388771057129,
+      "pairs": [],
+      "disposition": "ABSTAIN"
+    },
+    {
+      "layer": 20,
+      "feature": 79439,
+      "description": "ABSTAIN",
+      "stratum": "mixed-or-underspecified",
+      "q25_top_example_peak": 10.503835916519165,
+      "pairs": [],
+      "disposition": "ABSTAIN"
+    },
+    {
+      "layer": 20,
+      "feature": 62456,
+      "description": "President/director titles with unrelated weak peaks",
+      "stratum": "mixed-or-underspecified",
+      "q25_top_example_peak": 4.250706195831299,
+      "pairs": [
+        {
+          "pair_id": "20-62456-0",
+          "positive": 3.0303897857666016,
+          "negative": 0.0,
+          "difference": 3.0303897857666016,
+          "pass": true,
+          "token_lengths": [
+            10,
+            10
+          ],
+          "token_length_difference": 0
+        },
+        {
+          "pair_id": "20-62456-1",
+          "positive": 0.0,
+          "negative": 0.0,
+          "difference": 0.0,
+          "pass": false,
+          "token_lengths": [
+            9,
+            9
+          ],
+          "token_length_difference": 0
+        },
+        {
+          "pair_id": "20-62456-2",
+          "positive": 0.0,
+          "negative": 0.0,
+          "difference": 0.0,
+          "pass": false,
+          "token_lengths": [
+            11,
+            11
+          ],
+          "token_length_difference": 0
+        },
+        {
+          "pair_id": "20-62456-3",
+          "positive": 0.0,
+          "negative": 0.0,
+          "difference": 0.0,
+          "pass": false,
+          "token_lengths": [
+            9,
+            9
+          ],
+          "token_length_difference": 0
+        }
+      ],
+      "disposition": "inconclusive"
+    },
+    {
+      "layer": 20,
+      "feature": 12133,
+      "description": "Qualifying adjectives in paired/additive contrasts",
+      "stratum": "mixed-or-underspecified",
+      "q25_top_example_peak": 13.057521104812622,
+      "pairs": [
+        {
+          "pair_id": "20-12133-0",
+          "positive": 8.000630378723145,
+          "negative": 4.515791893005371,
+          "difference": 3.4848384857177734,
+          "pass": true,
+          "token_lengths": [
+            11,
+            10
+          ],
+          "token_length_difference": 1
+        },
+        {
+          "pair_id": "20-12133-1",
+          "positive": 0.0,
+          "negative": 0.0,
+          "difference": 0.0,
+          "pass": false,
+          "token_lengths": [
+            10,
+            9
+          ],
+          "token_length_difference": 1
+        },
+        {
+          "pair_id": "20-12133-2",
+          "positive": 8.620588302612305,
+          "negative": 0.0,
+          "difference": 8.620588302612305,
+          "pass": true,
+          "token_lengths": [
+            12,
+            10
+          ],
+          "token_length_difference": 2
+        },
+        {
+          "pair_id": "20-12133-3",
+          "positive": 12.368430137634277,
+          "negative": 2.941938638687134,
+          "difference": 9.426491498947144,
+          "pass": true,
+          "token_lengths": [
+            12,
+            9
+          ],
+          "token_length_difference": 3
+        }
+      ],
+      "disposition": "supported-pattern"
+    },
+    {
+      "layer": 20,
+      "feature": 18388,
+      "description": "ABSTAIN",
+      "stratum": "insufficient-observations",
+      "q25_top_example_peak": null,
+      "pairs": [],
+      "disposition": "ABSTAIN"
+    },
+    {
+      "layer": 20,
+      "feature": 12574,
+      "description": "ABSTAIN",
+      "stratum": "insufficient-observations",
+      "q25_top_example_peak": null,
+      "pairs": [],
+      "disposition": "ABSTAIN"
+    },
+    {
+      "layer": 30,
+      "feature": 57684,
+      "description": "Strength/resistance/muscle-building exercise",
+      "stratum": "coherent-supported pattern",
+      "q25_top_example_peak": 23.49290370941162,
+      "pairs": [
+        {
+          "pair_id": "30-57684-0",
+          "positive": 17.18356704711914,
+          "negative": 5.094482898712158,
+          "difference": 12.089084148406982,
+          "pass": true,
+          "token_lengths": [
+            9,
+            9
+          ],
+          "token_length_difference": 0
+        },
+        {
+          "pair_id": "30-57684-1",
+          "positive": 21.999893188476562,
+          "negative": 0.0,
+          "difference": 21.999893188476562,
+          "pass": true,
+          "token_lengths": [
+            14,
+            14
+          ],
+          "token_length_difference": 0
+        },
+        {
+          "pair_id": "30-57684-2",
+          "positive": 16.042613983154297,
+          "negative": 0.0,
+          "difference": 16.042613983154297,
+          "pass": true,
+          "token_lengths": [
+            9,
+            9
+          ],
+          "token_length_difference": 0
+        },
+        {
+          "pair_id": "30-57684-3",
+          "positive": 16.03046989440918,
+          "negative": 0.0,
+          "difference": 16.03046989440918,
+          "pass": true,
+          "token_lengths": [
+            9,
+            9
+          ],
+          "token_length_difference": 0
+        }
+      ],
+      "disposition": "supported-pattern"
+    },
+    {
+      "layer": 30,
+      "feature": 61033,
+      "description": "Trusted openness/sharing feelings and confiding",
+      "stratum": "coherent-supported pattern",
+      "q25_top_example_peak": 20.737680435180664,
+      "pairs": [
+        {
+          "pair_id": "30-61033-0",
+          "positive": 19.519149780273438,
+          "negative": 0.0,
+          "difference": 19.519149780273438,
+          "pass": true,
+          "token_lengths": [
+            16,
+            16
+          ],
+          "token_length_difference": 0
+        },
+        {
+          "pair_id": "30-61033-1",
+          "positive": 22.35153579711914,
+          "negative": 0.0,
+          "difference": 22.35153579711914,
+          "pass": true,
+          "token_lengths": [
+            16,
+            16
+          ],
+          "token_length_difference": 0
+        },
+        {
+          "pair_id": "30-61033-2",
+          "positive": 18.04981231689453,
+          "negative": 0.0,
+          "difference": 18.04981231689453,
+          "pass": true,
+          "token_lengths": [
+            13,
+            12
+          ],
+          "token_length_difference": 1
+        },
+        {
+          "pair_id": "30-61033-3",
+          "positive": 19.51876449584961,
+          "negative": 5.388124465942383,
+          "difference": 14.130640029907227,
+          "pass": true,
+          "token_lengths": [
+            16,
+            16
+          ],
+          "token_length_difference": 0
+        }
+      ],
+      "disposition": "supported-pattern"
+    },
+    {
+      "layer": 30,
+      "feature": 4670,
+      "description": "All expressing complete set/coverage",
+      "stratum": "coherent-supported pattern",
+      "q25_top_example_peak": 13.626002073287964,
+      "pairs": [
+        {
+          "pair_id": "30-4670-0",
+          "positive": 11.989299774169922,
+          "negative": 0.0,
+          "difference": 11.989299774169922,
+          "pass": true,
+          "token_lengths": [
+            10,
+            11
+          ],
+          "token_length_difference": -1
+        },
+        {
+          "pair_id": "30-4670-1",
+          "positive": 8.42640495300293,
+          "negative": 0.0,
+          "difference": 8.42640495300293,
+          "pass": true,
+          "token_lengths": [
+            10,
+            10
+          ],
+          "token_length_difference": 0
+        },
+        {
+          "pair_id": "30-4670-2",
+          "positive": 5.410105228424072,
+          "negative": 0.0,
+          "difference": 5.410105228424072,
+          "pass": true,
+          "token_lengths": [
+            9,
+            9
+          ],
+          "token_length_difference": 0
+        },
+        {
+          "pair_id": "30-4670-3",
+          "positive": 7.162273406982422,
+          "negative": 0.0,
+          "difference": 7.162273406982422,
+          "pass": true,
+          "token_lengths": [
+            8,
+            8
+          ],
+          "token_length_difference": 0
+        }
+      ],
+      "disposition": "supported-pattern"
+    },
+    {
+      "layer": 30,
+      "feature": 3874,
+      "description": "Evolutionary anatomy/locomotion adaptations",
+      "stratum": "coherent-supported pattern",
+      "q25_top_example_peak": 10.62397837638855,
+      "pairs": [
+        {
+          "pair_id": "30-3874-0",
+          "positive": 21.321666717529297,
+          "negative": 4.837935924530029,
+          "difference": 16.483730792999268,
+          "pass": true,
+          "token_lengths": [
+            13,
+            11
+          ],
+          "token_length_difference": 2
+        },
+        {
+          "pair_id": "30-3874-1",
+          "positive": 3.3379502296447754,
+          "negative": 0.0,
+          "difference": 3.3379502296447754,
+          "pass": true,
+          "token_lengths": [
+            12,
+            10
+          ],
+          "token_length_difference": 2
+        },
+        {
+          "pair_id": "30-3874-2",
+          "positive": 0.0,
+          "negative": 0.0,
+          "difference": 0.0,
+          "pass": false,
+          "token_lengths": [
+            8,
+            8
+          ],
+          "token_length_difference": 0
+        },
+        {
+          "pair_id": "30-3874-3",
+          "positive": 8.479419708251953,
+          "negative": 0.0,
+          "difference": 8.479419708251953,
+          "pass": true,
+          "token_lengths": [
+            12,
+            13
+          ],
+          "token_length_difference": -1
+        }
+      ],
+      "disposition": "supported-pattern"
+    },
+    {
+      "layer": 30,
+      "feature": 21274,
+      "description": "Editorial emphasis/italics/bold added or mine notes",
+      "stratum": "coherent-supported pattern",
+      "q25_top_example_peak": 32.405792236328125,
+      "pairs": [
+        {
+          "pair_id": "30-21274-0",
+          "positive": 31.731962203979492,
+          "negative": 6.56576681137085,
+          "difference": 25.166195392608643,
+          "pass": true,
+          "token_lengths": [
+            11,
+            11
+          ],
+          "token_length_difference": 0
+        },
+        {
+          "pair_id": "30-21274-1",
+          "positive": 20.44734001159668,
+          "negative": 2.7224678993225098,
+          "difference": 17.72487211227417,
+          "pass": true,
+          "token_lengths": [
+            12,
+            12
+          ],
+          "token_length_difference": 0
+        },
+        {
+          "pair_id": "30-21274-2",
+          "positive": 24.456445693969727,
+          "negative": 0.0,
+          "difference": 24.456445693969727,
+          "pass": true,
+          "token_lengths": [
+            9,
+            9
+          ],
+          "token_length_difference": 0
+        },
+        {
+          "pair_id": "30-21274-3",
+          "positive": 24.645021438598633,
+          "negative": 0.0,
+          "difference": 24.645021438598633,
+          "pass": true,
+          "token_lengths": [
+            10,
+            10
+          ],
+          "token_length_difference": 0
+        }
+      ],
+      "disposition": "supported-pattern"
+    },
+    {
+      "layer": 30,
+      "feature": 14536,
+      "description": "Pulse as vital sign",
+      "stratum": "coherent-supported pattern",
+      "q25_top_example_peak": 12.564144611358643,
+      "pairs": [
+        {
+          "pair_id": "30-14536-0",
+          "positive": 13.393692016601562,
+          "negative": 0.0,
+          "difference": 13.393692016601562,
+          "pass": true,
+          "token_lengths": [
+            11,
+            11
+          ],
+          "token_length_difference": 0
+        },
+        {
+          "pair_id": "30-14536-1",
+          "positive": 10.425424575805664,
+          "negative": 2.7008230686187744,
+          "difference": 7.72460150718689,
+          "pass": true,
+          "token_lengths": [
+            11,
+            12
+          ],
+          "token_length_difference": -1
+        },
+        {
+          "pair_id": "30-14536-2",
+          "positive": 14.435117721557617,
+          "negative": 3.3072376251220703,
+          "difference": 11.127880096435547,
+          "pass": true,
+          "token_lengths": [
+            12,
+            12
+          ],
+          "token_length_difference": 0
+        },
+        {
+          "pair_id": "30-14536-3",
+          "positive": 8.148679733276367,
+          "negative": 0.0,
+          "difference": 8.148679733276367,
+          "pass": true,
+          "token_lengths": [
+            8,
+            11
+          ],
+          "token_length_difference": -3
+        }
+      ],
+      "disposition": "supported-pattern"
+    },
+    {
+      "layer": 30,
+      "feature": 31832,
+      "description": "Negation of need/relevance/request with broader tails",
+      "stratum": "mixed-or-underspecified",
+      "q25_top_example_peak": 14.285598993301392,
+      "pairs": [
+        {
+          "pair_id": "30-31832-0",
+          "positive": 9.961112022399902,
+          "negative": 0.0,
+          "difference": 9.961112022399902,
+          "pass": true,
+          "token_lengths": [
+            12,
+            11
+          ],
+          "token_length_difference": 1
+        },
+        {
+          "pair_id": "30-31832-1",
+          "positive": 12.531028747558594,
+          "negative": 0.0,
+          "difference": 12.531028747558594,
+          "pass": true,
+          "token_lengths": [
+            10,
+            9
+          ],
+          "token_length_difference": 1
+        },
+        {
+          "pair_id": "30-31832-2",
+          "positive": 13.177486419677734,
+          "negative": 0.0,
+          "difference": 13.177486419677734,
+          "pass": true,
+          "token_lengths": [
+            11,
+            11
+          ],
+          "token_length_difference": 0
+        },
+        {
+          "pair_id": "30-31832-3",
+          "positive": 13.839381217956543,
+          "negative": 4.32755708694458,
+          "difference": 9.511824131011963,
+          "pass": true,
+          "token_lengths": [
+            13,
+            12
+          ],
+          "token_length_difference": 1
+        }
+      ],
+      "disposition": "supported-pattern"
+    },
+    {
+      "layer": 30,
+      "feature": 7999,
+      "description": "Social division/disagreement/conflict with alliance exception",
+      "stratum": "mixed-or-underspecified",
+      "q25_top_example_peak": 5.111568093299866,
+      "pairs": [
+        {
+          "pair_id": "30-7999-0",
+          "positive": 0.0,
+          "negative": 2.7331175804138184,
+          "difference": -2.7331175804138184,
+          "pass": false,
+          "token_lengths": [
+            11,
+            11
+          ],
+          "token_length_difference": 0
+        },
+        {
+          "pair_id": "30-7999-1",
+          "positive": 3.4076318740844727,
+          "negative": 0.0,
+          "difference": 3.4076318740844727,
+          "pass": true,
+          "token_lengths": [
+            9,
+            9
+          ],
+          "token_length_difference": 0
+        },
+        {
+          "pair_id": "30-7999-2",
+          "positive": 0.0,
+          "negative": 0.0,
+          "difference": 0.0,
+          "pass": false,
+          "token_lengths": [
+            10,
+            10
+          ],
+          "token_length_difference": 0
+        },
+        {
+          "pair_id": "30-7999-3",
+          "positive": 0.0,
+          "negative": 0.0,
+          "difference": 0.0,
+          "pass": false,
+          "token_lengths": [
+            11,
+            11
+          ],
+          "token_length_difference": 0
+        }
+      ],
+      "disposition": "inconclusive"
+    },
+    {
+      "layer": 30,
+      "feature": 28144,
+      "description": "Permissions/desires controlling another’s access/knowledge/actions",
+      "stratum": "mixed-or-underspecified",
+      "q25_top_example_peak": 4.423885226249695,
+      "pairs": [
+        {
+          "pair_id": "30-28144-0",
+          "positive": 5.926254749298096,
+          "negative": 3.4160609245300293,
+          "difference": 2.5101938247680664,
+          "pass": true,
+          "token_lengths": [
+            12,
+            12
+          ],
+          "token_length_difference": 0
+        },
+        {
+          "pair_id": "30-28144-1",
+          "positive": 3.069112777709961,
+          "negative": 0.0,
+          "difference": 3.069112777709961,
+          "pass": true,
+          "token_lengths": [
+            11,
+            11
+          ],
+          "token_length_difference": 0
+        },
+        {
+          "pair_id": "30-28144-2",
+          "positive": 3.3099184036254883,
+          "negative": 0.0,
+          "difference": 3.3099184036254883,
+          "pass": true,
+          "token_lengths": [
+            13,
+            12
+          ],
+          "token_length_difference": 1
+        },
+        {
+          "pair_id": "30-28144-3",
+          "positive": 3.575179100036621,
+          "negative": 0.0,
+          "difference": 3.575179100036621,
+          "pass": true,
+          "token_lengths": [
+            12,
+            12
+          ],
+          "token_length_difference": 0
+        }
+      ],
+      "disposition": "supported-pattern"
+    },
+    {
+      "layer": 30,
+      "feature": 7508,
+      "description": "Bestowal/exaltation or honors with religious/narrative tails",
+      "stratum": "mixed-or-underspecified",
+      "q25_top_example_peak": 8.364398002624512,
+      "pairs": [
+        {
+          "pair_id": "30-7508-0",
+          "positive": 25.05730438232422,
+          "negative": 0.0,
+          "difference": 25.05730438232422,
+          "pass": true,
+          "token_lengths": [
+            15,
+            14
+          ],
+          "token_length_difference": 1
+        },
+        {
+          "pair_id": "30-7508-1",
+          "positive": 5.545170783996582,
+          "negative": 0.0,
+          "difference": 5.545170783996582,
+          "pass": true,
+          "token_lengths": [
+            13,
+            13
+          ],
+          "token_length_difference": 0
+        },
+        {
+          "pair_id": "30-7508-2",
+          "positive": 0.0,
+          "negative": 0.0,
+          "difference": 0.0,
+          "pass": false,
+          "token_lengths": [
+            13,
+            13
+          ],
+          "token_length_difference": 0
+        },
+        {
+          "pair_id": "30-7508-3",
+          "positive": 4.419740676879883,
+          "negative": 0.0,
+          "difference": 4.419740676879883,
+          "pass": true,
+          "token_lengths": [
+            10,
+            9
+          ],
+          "token_length_difference": 1
+        }
+      ],
+      "disposition": "supported-pattern"
+    },
+    {
+      "layer": 30,
+      "feature": 70335,
+      "description": "ABSTAIN",
+      "stratum": "insufficient-observations",
+      "q25_top_example_peak": null,
+      "pairs": [],
+      "disposition": "ABSTAIN"
+    },
+    {
+      "layer": 30,
+      "feature": 62405,
+      "description": "ABSTAIN",
+      "stratum": "insufficient-observations",
+      "q25_top_example_peak": null,
+      "pairs": [],
+      "disposition": "ABSTAIN"
+    }
+  ]
+}

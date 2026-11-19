@@ -1,0 +1,119 @@
+{
+  "layer": 20,
+  "path": "layer20/sae.safetensors",
+  "bytes": 1678081056,
+  "sha256": "24b2a40991ff2ce3c4230357fc30edf8d269210e37926b7ef3c2ec6f5b7eebc8",
+  "source_checkpoint_sha256": "461248e1501ac20c0ed1ed2c713ff88f94066326d9a5e7044fb5c6772bca259e",
+  "source_checkpoint_bytes": 5034862412,
+  "source_unchanged_after_export": true,
+  "step": 97700,
+  "config": {
+    "MODEL_NAME": "ibm-granite/granite-4.2-3b",
+    "MODEL_REVISION": "4e9c275e232f10211ec88644d106a1f6a1b60e06",
+    "SEED": 0,
+    "D_MODEL": 2560,
+    "N_LAYERS_TOTAL": 40,
+    "TARGET_LAYERS": [
+      20
+    ],
+    "D_SAE": 81920,
+    "K": 32,
+    "LR": 0.0004,
+    "WARMUP_STEPS": 1000,
+    "RESAMPLE_EVERY_STEPS": 2000,
+    "DEAD_THRESHOLD_STEPS": 2000,
+    "AUX_K": 512,
+    "AUX_LOSS_COEF": 0.03125,
+    "AUX_DEAD_THRESHOLD_STEPS": 500,
+    "DATASET_NAME": "HuggingFaceFW/fineweb-edu",
+    "DATASET_CONFIG": "sample-10BT",
+    "SEQ_LEN": 512,
+    "TOKEN_BUDGET": 200000000,
+    "FORWARD_BATCH_SEQS": 16,
+    "SHUFFLE_BUFFER_TOKENS": 500000,
+    "BUFFER_REFILL_FRACTION": 0.5,
+    "EXCLUDE_LOCAL_POSITION_0": true,
+    "TRAIN_BATCH_SIZE": 2048,
+    "TOTAL_SAE_STEPS": 97656,
+    "BASE_MODEL_DTYPE": "bfloat16",
+    "SAE_DTYPE": "float32"
+  },
+  "metadata": {
+    "format": "granite-custom-topk-v1",
+    "layer": "20",
+    "model": "ibm-granite/granite-4.2-3b",
+    "model_revision": "4e9c275e232f10211ec88644d106a1f6a1b60e06",
+    "hook": "model.model.layers[20] output",
+    "source_checkpoint_sha256": "461248e1501ac20c0ed1ed2c713ff88f94066326d9a5e7044fb5c6772bca259e",
+    "step": "97700",
+    "normalization": "(h-mean)/std; center on b_dec; inverse recon*std+mean",
+    "encoder": "TopK(preactivation) then ReLU; no decoder renorm",
+    "license": "Apache-2.0",
+    "exclude_local_position_0": "true"
+  },
+  "tensors": {
+    "W_enc": {
+      "shape": [
+        2560,
+        81920
+      ],
+      "dtype": "torch.float32"
+    },
+    "b_enc": {
+      "shape": [
+        81920
+      ],
+      "dtype": "torch.float32"
+    },
+    "W_dec": {
+      "shape": [
+        81920,
+        2560
+      ],
+      "dtype": "torch.float32"
+    },
+    "b_dec": {
+      "shape": [
+        2560
+      ],
+      "dtype": "torch.float32"
+    },
+    "mean": {
+      "shape": [
+        1,
+        2560
+      ],
+      "dtype": "torch.float32"
+    },
+    "std": {
+      "shape": [
+        1,
+        2560
+      ],
+      "dtype": "torch.float32"
+    },
+    "k": {
+      "shape": [],
+      "dtype": "torch.int64"
+    }
+  },
+  "validation": {
+    "kind": "synthetic unit validation, not semantic result",
+    "seed": 20261136,
+    "input_shape": [
+      4,
+      2560
+    ],
+    "all_exported_tensors_bitwise_equal": true,
+    "feature_activations_exact": true,
+    "reconstruction_exact": true,
+    "activation_max_abs_error": 0.0,
+    "original_unit_reconstruction_max_abs_error": 0.0
+  },
+  "license": "Apache-2.0",
+  "embedded_metadata_provenance": {
+    "license": "LICENSE_CHOICE_PENDING",
+    "status": "export-time license-selection provenance, not current license",
+    "superseded_by": "LICENSE"
+  }
+}
